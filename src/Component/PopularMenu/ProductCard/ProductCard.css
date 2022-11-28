@@ -1,0 +1,33 @@
+.single_product{
+    background-color: #141124;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+.product_img{
+    /* width: 100px; */
+    height: 150px;
+}
+.single_product:hover{
+    box-shadow: 5px 5px 10px -5px #f5b70a;
+}
+
+.product_content h6{
+    color:#f5b70a;
+    /* margin-top: 10px; */
+}
+.rating{
+    margin-top: 30px;
+}
+.rating span i{
+    color: #F76E11;
+}
+
+.price{
+    color:#f5b70a;
+}
+.add i{
+    color: #f5b70a;
+    font-size: 20px;
+}

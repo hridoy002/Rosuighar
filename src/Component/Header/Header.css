@@ -1,0 +1,122 @@
+.header{
+    width: 100%;
+    height: 80px;
+    line-height: 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    /* background-color: aquamarine; */
+}
+
+.logo h2{
+    font-size: 25px;
+}
+.logo h2 span i{
+    padding-right: 10px;
+    font-size: 30px;
+}
+
+.navigation{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.nav_wrapper{
+    display: flex;
+    align-items: baseline;
+    gap: 100px;
+}
+.nav_list{
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+    list-style: none;
+    column-gap: 2.7rem;
+}
+
+.list_item a{
+    text-decoration: none;
+    color: white;
+}
+
+.list_item a:hover{
+    color: #f5b70a;
+}
+.search{
+    display: flex;
+    align-items: center;
+    padding: 10px 25px;
+    height: 35px;
+    border-radius: 50px;
+    background-color: #141124;
+}
+
+.search input{
+    color: white;
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+.search span i{
+    cursor: pointer;
+}
+
+.mobile_menu{
+    display: none;
+}
+
+.mobile_menu i{
+    font-size: 1.5rem;
+}
+
+.cart_icon{
+    position: relative;
+}
+.badge{
+    border-radius: 50%;
+    font-size: 12px;
+    position: absolute;
+    background-color: red;
+    top:18px;
+    right: -18px;
+}
+/*--------------- mobile ---------------- */
+@media only screen and (max-width:992px) {
+    .nav_menu{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: none;
+        z-index: 100;
+    }
+    .nav_wrapper{
+        display: flex;
+        flex-direction: column;
+        width: 250px;
+        height: 100%;
+        background-color: rgb(30, 31, 73);
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 20px;
+        box-shadow: 5px 5px 15px -5px #f5b70a;
+        z-index: 100;
+    }
+    .nav_list{
+        display: flex;
+        flex-direction: column;
+    }
+    .mobile_menu{
+        display: block;
+    }
+    .mobile_menu i{
+        cursor: pointer;
+    }
+    .active_menu{
+        display: block;
+    }
+}
